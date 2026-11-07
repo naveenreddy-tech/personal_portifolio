@@ -7,6 +7,9 @@
   color: var(--accentColor);
 }
 .work-section {
+  position: relative;
+  z-index: 10;
+  background-color: var(--backgroundColor, #0b080c);
   transition: 0s;
   height: 100vh;
   box-sizing: border-box;

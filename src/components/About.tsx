@@ -6,9 +6,12 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-          dolores numquam iusto Ratione earum ducimus autem id iure pariatur
-          dolorum quae maiores.
+          I'm Kommidi Naveen Reddy, a Full Stack Developer with 2+ years of hands-on
+          production experience architecting and delivering scalable web applications
+          from concept to deployment. Skilled across React.js and Next.js on the frontend,
+          and Node.js, Express.js, NestJS, and Python on the backend — with deep expertise
+          in FinTech platforms, real-time systems using Socket.io, AI/ML integrations
+          via RAG pipelines and LangChain, and secure RESTful microservices.
         </p>
       </div>
     </div>

@@ -22,6 +22,7 @@ const Navbar = () => {
 
     smoother.scrollTop(0);
     smoother.paused(true);
+    ScrollTrigger.refresh();
 
     let links = document.querySelectorAll(".header ul a");
     links.forEach((elem) => {
@@ -43,19 +44,24 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          Logo
+          Naveen Reddy
         </a>
         <a
-          href="mailto:example@mail.com"
+          href="mailto:naveenreddy67045@gmail.com"
           className="navbar-connect"
           data-cursor="disable"
         >
-          example@mail.com
+          naveenreddy67045@gmail.com
         </a>
         <ul>
           <li>
             <a data-href="#about" href="#about">
               <HoverLinks text="ABOUT" />
+            </a>
+          </li>
+          <li>
+            <a data-href="#techstack" href="#techstack">
+              <HoverLinks text="SKILLS" />
             </a>
           </li>
           <li>

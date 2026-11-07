@@ -1,0 +1,143 @@
+.techstack-section {
+  width: 100%;
+  position: relative;
+  padding: 40px 0 80px 0;
+  background-color: var(--backgroundColor, #0b080c);
+  color: #eae5ec;
+  box-sizing: border-box;
+}
+
+.techstack-container {
+  width: var(--cWidth);
+  max-width: var(--cMaxWidth, 1920px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Category Filter Tabs */
+.techstack-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.techstack-filter-btn {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(234, 229, 236, 0.7);
+  padding: 8px 20px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.techstack-filter-btn:hover {
+  background: rgba(194, 164, 255, 0.1);
+  color: #ffffff;
+  border-color: var(--accentColor, #c2a4ff);
+}
+
+.techstack-filter-btn.active {
+  background: var(--accentColor, #c2a4ff);
+  color: #0b080c;
+  border-color: var(--accentColor, #c2a4ff);
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(194, 164, 255, 0.25);
+}
+
+/* Plain Gallery Grid without heavy animations */
+.techstack-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .techstack-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+    gap: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .techstack-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+    gap: 20px;
+  }
+}
+
+.techstack-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  padding: 22px 14px 18px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  position: relative;
+}
+
+.techstack-card:hover {
+  border-color: var(--accentColor, #c2a4ff);
+  background: rgba(194, 164, 255, 0.05);
+}
+
+.techstack-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.techstack-icon-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.techstack-icon-wrapper svg {
+  width: 100%;
+  height: 100%;
+}
+
+.techstack-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+}
+
+.techstack-name {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #eae5ec;
+  line-height: 1.2;
+}
+
+.techstack-category-tag {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(234, 229, 236, 0.4);
+}
+
+.techstack-card:hover .techstack-category-tag {
+  color: var(--accentColor, #c2a4ff);
+}

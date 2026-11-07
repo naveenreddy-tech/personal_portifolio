@@ -1,72 +1,87 @@
 import { MdArrowOutward, MdCopyright } from "react-icons/md";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 import "./styles/Contact.css";
 
 const Contact = () => {
   return (
-    <div className="contact-section section-container" id="contact">
+    <section className="contact-section" id="contact">
       <div className="contact-container">
-        <h3>Contact</h3>
-        <div className="contact-flex">
-          <div className="contact-box">
+        <div className="contact-header">
+          <h2>
+            Contact <span>Us</span>
+          </h2>
+          <p>
+            Have a project in mind, opportunities to discuss, or just want to
+            connect? Feel free to reach out anytime.
+          </p>
+        </div>
+
+        <div className="contact-grid">
+          <div className="contact-card">
             <h4>Email</h4>
-            <p>
-              <a href="mailto:example@mail.com" data-cursor="disable">
-                example@mail.com
-              </a>
-            </p>
+            <a
+              href="mailto:naveenreddy67045@gmail.com"
+              data-cursor="disable"
+            >
+              naveenreddy67045@gmail.com
+            </a>
+          </div>
+
+          <div className="contact-card">
             <h4>Phone</h4>
-            <p>
-              <a href="tel:+9199999999" data-cursor="disable">
-                +91 99999 99999
-              </a>
-            </p>
-          </div>
-          <div className="contact-box">
-            <h4>Social</h4>
-            <a
-              href="https://github.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Github <MdArrowOutward />
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Linkedin <MdArrowOutward />
-            </a>
-            <a
-              href="https://x.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Twitter <MdArrowOutward />
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Instagram <MdArrowOutward />
+            <a href="tel:+917893467045" data-cursor="disable">
+              +91 78934 67045
             </a>
           </div>
-          <div className="contact-box">
-            <h2>
-              Designed and Developed <br /> by <span>Moncy Yohannan</span>
-            </h2>
-            <h5>
-              <MdCopyright /> 2024
-            </h5>
+
+          <div className="contact-card">
+            <h4>Location</h4>
+            <p data-cursor="disable">Hyderabad, India</p>
+          </div>
+        </div>
+
+        <div className="contact-socials-wrapper">
+          <h4>Social Profiles</h4>
+          <div className="contact-social-links">
+            <a
+              href="https://github.com/naveenreddy018"
+              target="_blank"
+              rel="noreferrer"
+              data-cursor="disable"
+              className="contact-social-btn"
+            >
+              <FaGithub /> GitHub <MdArrowOutward />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kommidinaveen"
+              target="_blank"
+              rel="noreferrer"
+              data-cursor="disable"
+              className="contact-social-btn"
+            >
+              <FaLinkedinIn /> LinkedIn <MdArrowOutward />
+            </a>
+            <a
+              href="mailto:naveenreddy67045@gmail.com"
+              data-cursor="disable"
+              className="contact-social-btn"
+            >
+              <MdEmail /> Email Me <MdArrowOutward />
+            </a>
+          </div>
+        </div>
+
+        <div className="contact-footer-bar">
+          <h5>
+            Designed and Developed by <span>Kommidi Naveen Reddy</span>
+          </h5>
+          <div className="contact-footer-copy">
+            <MdCopyright /> {new Date().getFullYear()} All Rights Reserved
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
